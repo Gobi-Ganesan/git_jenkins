@@ -1,30 +1,22 @@
 pipeline {
     agent any
-
+    tools { 
+        maven 'Maven 3.3.9' 
+        jdk 'jdk8' 
+    }
     stages {
-        stage('Build') {
+        stage ('Initialize') {
             steps {
-                sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.war', fingerprint: true 
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
             }
         }
-        stage('Test') {
+
+        stage ('Build') {
             steps {
-                /* `make check` returns non-zero on test failures,
-                * using `true` to allow the Pipeline to continue nonetheless
-                */
-                sh 'make check || true' 
-                junit '**/target/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            when {
-              expression {
-                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
-              }
-            }
-            steps {
-                sh 'make publish'
+                echo 'This is a minimal pipeline.'
             }
         }
     }
