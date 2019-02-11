@@ -9,10 +9,10 @@
   <url>http://maven.apache.org</url>
 <distributionManagement>
   <repository>
-     <id>3rd_party_p2_updatesite</id>
-     <url>http://localhost:8081/nexus/content/sites/3rd_party_p2_updatesite/</url>
+    <id>3rd_party_p2_updatesite</id>
+    <url>http://localhost:8081/nexus/content/repositories/3rd_party_p2_updatesite</url>
   </repository>
-  </distributionManagement>
+</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>org.testng</groupId>
