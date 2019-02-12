@@ -8,10 +8,10 @@
   <name>pro3 Maven Webapp</name>
   <url>http://maven.apache.org</url>
 <distributionManagement>
-  <site>
+  <repository>
     <id>project</id>
     <url>http://localhost:8081/nexus/content/sites/project</url>
-  </site>
+  </repository>
 </distributionManagement>
   
   <dependencies>
