@@ -8,10 +8,10 @@
   <name>pro3 Maven Webapp</name>
   <url>http://maven.apache.org</url>
 <distributionManagement>
-  <repository>
+  <site>
     <id>3rd_party_p2_updatesite</id>
     <url>http://localhost:8081/nexus/content/repositories/3rd_party_p2_updatesite</url>
-  </repository>
+  </site>
 </distributionManagement>
   <dependencies>
     <dependency>
