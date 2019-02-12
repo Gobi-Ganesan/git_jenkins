@@ -9,8 +9,8 @@
   <url>http://maven.apache.org</url>
 <distributionManagement>
   <site>
-    <id>3rd_party_p2_updatesite</id>
-    <url>http://localhost:8081/nexus/content/site/3rd_party_p2_updatesite</url>
+    <id>project</id>
+    <url>http://localhost:8081/nexus/content/sites/project</url>
   </site>
 </distributionManagement>
   
