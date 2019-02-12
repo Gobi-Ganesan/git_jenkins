@@ -27,9 +27,9 @@
          </goals>
       </execution>
    </executions>
-</plugin>
- </build>
+  </plugin>
     </plugins>
+     </build>
   <dependencies>
     <dependency>
       <groupId>org.testng</groupId>
